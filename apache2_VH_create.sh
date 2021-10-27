@@ -29,5 +29,5 @@ echo "</VirtualHost>"
 # сімлінкуємо його в папку з конфігами
 ln -s /etc/apache2/sites-available/${domain}.conf /etc/apache2/sites-enabled/${domain}.conf
 
-#  рестартуємо апач
+#  рестартуємо апач2
 service apache2 reload
