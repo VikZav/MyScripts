@@ -46,7 +46,7 @@ ctnumber=`echo ${ipaddress} | cut -d . -f 4`
 pct set ${ctnumber} -mp0 /mnt/live/${domain},mp=/mnt/${domain},ro=1
 
 #прокидуємо порт для ssh  доступу:
-iptables -t nat -A PREROUTING -i eno1 -p tcp -m tcp --dport 22${ctnumber} -j DNAT --to-destination ${ipaddress}:22
+iptables -t nat -A PREROUTING -i eno1 -p tcp -m tcp --dport ${ctnumber} -j DNAT --to-destination ${ipaddress}:22
 
 #=========================================================
 #=======================перевірки=========================
